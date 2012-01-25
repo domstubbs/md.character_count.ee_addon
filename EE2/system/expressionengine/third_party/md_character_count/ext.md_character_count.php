@@ -364,7 +364,7 @@ class Md_character_count_ext {
 		$controller = element('C', $get);
 		
 	    // if we are on a publish or edit page
-	    if (isset($this->EE->session->cache['mdesign'][MD_CC_addon_id]['require_scripts']) === TRUE && ($controller == 'content_publish' || $controller == 'content_edit'))
+	    if (isset($this->EE->session->cache['mdesign'][MD_CC_addon_id]['require_scripts']) === TRUE && $controller == 'content_publish')
 		{
 	    	// multiple-site support is commented for now.
 			//if($this->settings['enable'] == 'y')
